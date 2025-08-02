@@ -1,0 +1,130 @@
+:root {
+  --primario: #9e0000;
+  --secundario: blueviolet;
+}
+
+/* Globales */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+/* Header */
+
+.header {
+  background-color: var(--primario);
+  color: #fff;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.header h1,
+.header h2,
+.header p {
+  margin: 0;
+  text-align: center;
+}
+
+.header p {
+  line-height: 1.4;
+}
+
+.header .datos-personales {
+  padding: 20px;
+  background-color: var(--secundario);
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+/* secciones principal */
+
+.principal {
+  text-align: center;
+}
+
+.principal section {
+  padding: 10px 0;
+}
+
+.principal section:nth-child(odd) {
+  background-color: #8d948d;
+}
+
+.section-titulo { 
+  color: rebeccapurple;
+  text-transform: uppercase;
+}
+
+.listas {
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* seccion lateral */
+
+.lateral {
+  padding: 30px 0;
+}
+
+.lateral img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+article {
+  text-align: center;
+}
+
+/* footer */
+
+.footer {
+  background-color: crimson;
+  padding: 30px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: .5s ease all;
+}
+
+.footer a:hover {
+  color: chartreuse;
+  text-decoration: underline;
+}

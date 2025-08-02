@@ -3,56 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Jhon Doe</title>
+  <title>Curriculum Pablo Moya</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <style>
+    /* .cargo {
+      color: #fff;
+      background-color: #AB0134;
+    } */
+  </style>
 </head>
 <body>
 
-  <header>
-    <hr>
-    <h1>Jhon Doe</h1>
-    <h2>Web Developer</h2>
-    <div>
-      <p>Carúpano, estado Sucre</p>
-      <p>0424-555123</p>
-      <p>jhon-doe@gmail.com</p>
-    </div>
-  </header>
+  <div class="contenedor">
+    <header class="header">
+      <h1 class="nombre">Pablo Moya</h1>
+      <h2 class="cargo">Web Developer</h2>
+      <div class="datos-personales">
+        <p class="subtitulo">Carúpano, estado Sucre</p>
+        <p>0424-555123</p>
+        <p>jhon-doe@gmail.com</p>
+      </div>
+    </header>
+    <main class="principal">
+      <section>
+        <h3 class="section-titulo">habilidades</h3>
+        <p> <strong>HTML5, CSS3, React.js</strong>, Tailwind CSS, Resolución de problemas, Comunicación efectiva</p>
+      </section>
 
-  <main>
-    <section>
-       <h3>Habilidades</h3>
-      <p>HTML5, CSS3, React.js, Tailwind CSS, Resolución de problemas, Comunicación efectiva</p>
-    </section>
+      <section>
+        <h3 class="section-titulo">Educación</h3>
+        <p>Computer Science 2020 - Space University</p>
+      </section>
 
-    <section>
-      <h3>Educación</h3>
-      <p>Computer Science 2020 - Space University</p>
-    </section>
+      <section>
+        <h3 class="section-titulo">Experiencia</h3>
+        <!-- UL -> ESTA SON LAS LISTAS DESORDENADAS  QUE NO VIMOS EN CLASES
+          SE CREN UNA ETIQUETA UL QUE VA A CONTENER TODOS LOS ITEMS LOS CUALES
+          SE COLOCA LA ETIQUETA LI COMO PUEDEN VER EN EL EJEMPLO
+          TAMBIEN HAY OL QUE SON LISTAS ORDENADAS QUE LLEVAN NUMEROS
+          EN LAS UL SE COLOCAN VINETAS COMO EJEMPLO CUANDO HACEN EN WORDS VARIOS ITEMS, Y LAS OL 
+          COLOCAN NUMEROS
+        -->
+        <ul class="listas">
+          <li>Web Developer pablomoyaseo.com - 2025</li>
+          <li>Frontend Developer Amazon - 2022-2024 </li>
+          <li>Trainee - PDVSA - 2020-2022</li>
+        </ul>
+      </section>  
+    </main>
+  </div>
 
-    <section>
-      <h3>Experiencia</h3>
-      <!-- UL -> ESTA SON LAS LISTAS DESORDENADAS  QUE NO VIMOS EN CLASES
-        SE CREN UNA ETIQUETA UL QUE VA A CONTENER TODOS LOS ITEMS LOS CUALES
-        SE COLOCA LA ETIQUETA LI COMO PUEDEN VER EN EL EJEMPLO
-        TAMBIEN HAY OL QUE SON LISTAS ORDENADAS QUE LLEVAN NUMEROS
-        EN LAS UL SE COLOCAN VINETAS COMO EJEMPLO CUANDO HACEN EN WORDS VARIOS ITEMS, Y LAS OL 
-        COLOCAN NUMEROS
-      -->
-      <ul>
-        <li>Web Developer pablomoyaseo.com - 2025</li>
-        <li>Frontend Developer Amazon - 2022-2024 </li>
-        <li>Trainee - PDVSA - 2020-2022</li>
-      </ul>
-    </section>  
-  </main>
+  
 
-  <aside>
+  <aside class="contenedor lateral">
     <img src="img/jhon-doe.jpg" alt="Foto de Jhon Doe">
     <!-- aqui estamos usando otra etiqueta que no vimos el article y le puse una lista ol
      para que vean la diferencia -->
     <article>
       <h2>Cursos Realizados</h2>
-      <ol>
+      <ol class="listas">
         <li>HTML, CSS Y JS</li>
         <li>React</li>
         <li>Wordpress</li>
@@ -60,9 +70,12 @@
     </article>
   </aside>
 
-  <footer>
-    <!-- a -> son enlaces tambien nos falto ver esta , te dirige en el atributo href en este caso a la pagina de linkedin, tambien hay mas atributos que veremos en clase -->
-    Para mayor información , visita <a href="https://www.linkedin.com/">Linkedin</a>
+  
+  <footer class="footer">
+    <div class="contenedor">
+      <!-- a -> son enlaces tambien nos falto ver esta , te dirige en el atributo href en este caso a la pagina de linkedin, tambien hay mas atributos que veremos en clase -->
+      Para mayor información , visita <a href="https://www.linkedin.com/">Linkedin</a>
+    </div>
   </footer>
   
 </body>
